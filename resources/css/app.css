@@ -1,0 +1,62 @@
+@import "fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.screen-responsive {
+    /*@apply w-[100%] sm:max-w-[600px] md:max-w-[760px] lg:max-w-[1000px] mx-4 sm:mx-auto border border-red-400;*/
+    @apply container px-4 sm:px-0 sm:mx-auto;
+}
+
+.header {
+    @apply flex
+}
+
+.main-logo {
+    @apply block;
+}
+.main-logo svg {
+    transition: 60ms;
+}
+
+.menu-bar {
+    @apply flex flex-col flex-grow justify-between
+}
+
+/*
+.menu-bar .main-menu{
+    @apply w-full
+}
+
+.menu-bar .manarat-international-university svg {
+    @apply h-auto w-full
+}
+*/
+
+
+#top-menu {
+    transition: 100ms;
+}
+
+.scroll-greater-than-zero .manarat-international-university {
+    display: none;
+}
+
+.scroll-greater-than-zero #top-menu {
+    height: 0;
+}
+
+.scroll-greater-than-zero .main-logo {
+    height: 30px !important;
+}
+
+.scroll-greater-than-zero .menu-bar {
+    justify-content: end;
+    padding-left: 10px;
+}
+
+.scroll-greater-than-zero .main-logo svg{
+    height: 100% !important;
+    width: auto !important;
+}
