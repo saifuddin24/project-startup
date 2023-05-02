@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <div>Header</div>
+    <div class="p-16">
+<!--        <div>Header</div>-->
         <router-view></router-view>
-        <div>Footer</div>
+<!--        <div>Footer</div>-->
     </div>
 </template>
 
